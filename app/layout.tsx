@@ -1,22 +1,15 @@
 ﻿import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
-
 export const metadata: Metadata = {
-  title: "Jonas Li | AI-Native Builder",
-  description: "Building fintech & geoscience tools with Next.js, TypeScript, and Python.",
+  title: "Jonas Li — Independent Product Builder",
+  description: "Jonas Li designs and ships useful software for real life across fintech, geoscience, community, and creator tools.",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className="dark">
-      <body className={inter.className}>{children}</body>
+    <html lang="en">
+      <body>{children}</body>
     </html>
   );
 }
